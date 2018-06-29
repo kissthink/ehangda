@@ -19,5 +19,4 @@ E航大是一款校园服务查询类微信小程序，是碎片化、一站式�
 ![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/19.jpg)
 
 ![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/21.jpg)
-![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/22.jpg)
-![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/23.jpg)
+
