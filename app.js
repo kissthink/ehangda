@@ -36,7 +36,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    // SERVER: 'http://127.0.0.1:8888',
-    SERVER: 'https://wtool.ehangopen.ourcauc.com',
+    SERVER: 'http://127.0.0.1:8888',
   }
 })
