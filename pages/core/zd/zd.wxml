@@ -1,0 +1,33 @@
+<view class='flxx'>
+<view class='block1'>
+ <view class='block1-hd'> 当前余额 :</view>
+ <view class='jine'>{{yue}}</view>
+ <view class='block1-2'>
+   <view class='flx'>
+    <text>自：</text> <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+     {{date.start}}
+  </picker>
+   </view>
+   <view class='flx'>
+     <text>至：</text><picker mode="date" value="{{date}}" bindchange="bindDateChange2" >
+     {{date.end}}
+  </picker>
+   </view>
+  </view> 
+  <view class='tishi'>温馨提示：点击时间进行更改</view>
+  <view class='tish2i'>消费记录有延迟，结果仅供参考</view>
+</view>
+<button class='butn' bindtap='cha' hover-class='butn2'>查询</button>
+ <view class='blck2'>
+<view class='block2-hd'>消费记录<view>总消费金额：{{zxf}}</view></view>
+<view wx:for='{{list}}'>
+<view class='block2'>
+  <view class='time txt'> <image src='/images/zd/time.png' class='img'></image> 时间 :<text>{{list[index].time}}</text></view>
+  <view class='cls txt'>
+  <view class='blkr'> <image src='/images/zd/place.png' class='img'></image>地点 :<text>{{list[index].place}}</text></view>
+  <view> <image src='/images/zd/much.png' class='img'></image>金额 :<text>{{list[index].much}}</text></view>
+</view>
+</view>
+</view>
+</view>
+</view>

@@ -1,0 +1,58 @@
+<view class='header_desciption'>
+  <view>空教室查询系统</view>
+  <view class='tip'>教室可能被借用，结果仅供参考</view>
+</view>
+<view class='header'>
+  <view class='header_date'>
+  今天是{{date}}
+  </view>
+  <view class='header_week'>
+  第{{week}}周,星期{{l[day-1]}}
+  </view>
+</view>
+
+<view class='list'>
+  <view class='list_description'>
+    开始节数
+  </view>
+  <view class='list_value'>
+     <picker id='start' bindchange="change_js" value="{{index}}" range="{{js_arr}}">
+    <view>
+     <input disabled='false' value='{{js_arr[start]}}' placeholder='以小课为计算单位'></input> 
+   </view>
+  </picker> 
+  </view>
+</view>
+
+<view class='list'>
+  <view class='list_description'>
+    结束节数
+  </view>
+  <view class='list_value'>
+     <picker id='end' bindchange="change_js" value="{{index}}" range="{{js_arr}}">
+    <view>
+     <input disabled='false' value='{{js_arr[end]}}' placeholder='以小课为计算单位'></input> 
+   </view>
+  </picker> 
+  </view>
+</view>
+<!-- <view class='btn'>
+  <button >查找空教室</button>
+</view> -->
+<view class='class_list'>
+  <view class='class_list_header'>
+    <view class='class_list_header_icon'>
+      <image src='/images/kjs/kjs.png' mode='widthFix'></image>
+    </view>
+    <view class='class_list_header_info'>
+      <text>空教室信息</text>
+    </view>
+  </view>
+  <view class='class_list_list'>
+    <view wx:for="{{list}}" class='class_list_list_detail'>
+      <text class='pos'>{{item}}</text>
+       <text class='statu'>无课</text>
+    </view>
+    
+  </view>
+</view>

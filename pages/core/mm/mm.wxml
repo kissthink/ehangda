@@ -1,0 +1,46 @@
+<view class='logo'>
+  <image src='../../../images/mm/logo.png'></image>
+  <view>
+    <text>统一认证账号密码修改</text>
+  </view>
+</view>
+<form bindsubmit='changepsd'>
+  <view class='content'>
+    <view class='opsd'>
+      <text>旧密码</text>
+    <input name='oldPsdInput' class='one' type='password'></input>
+    </view>
+    <view class='npsd'>
+      <text>新密码</text>
+      <input name='newPsdInput1' type='password'></input>
+    </view>
+    <view class='npsd'>
+      <text>再确认</text>
+      <input name='newPsdInput2'  type='password'></input>
+    </view>
+  </view>
+  <view class='tips' bindtap='showTip' >
+    <image src='../../../images/mm/tip.png'></image>
+    <text>密码修改规则</text>
+  </view>
+  <view class='tip-info'  wx:if="{{tip=='true'}}">
+      <view class='header'>
+        <view id='ts'>密码修改规则</view>
+        <view id='gb' bindtap='closeTip'>×</view>
+      </view>
+      <view class='body'>
+      <text>
+      新密码必须符合下面强密码规则：
+1、密码长度最小值：8位。
+2、密码复杂性要求：必须包含大写字母、小写字母、数字、符号中的任意三种组合，并且不能包含用户名。
+3、密码最短使用期限：1天；密码最长使用期限：90天。
+4、强制密码历史：5次。（确保近5次使用过的旧密码不能继续使用）
+5、允许失败登录尝试次数：5次；账户被锁定持续时间：1分钟。
+6、密码24小时内只允许修改一次。
+      </text>
+      </view>
+  </view>
+  <button form-type='submit'>确认修改</button>
+</form>
+
+  

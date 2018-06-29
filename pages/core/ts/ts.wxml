@@ -1,0 +1,67 @@
+<view wx:if="{{list_show=='loading'}}" class="circle-loader">
+        <view class="circle-line">
+            <view class="circle circle-blue"></view>
+            <view class="circle circle-blue"></view>
+            <view class="circle circle-blue"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-yellow"></view>
+            <view class="circle circle-yellow"></view>
+            <view class="circle circle-yellow"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-red"></view>
+            <view class="circle circle-red"></view>
+            <view class="circle circle-red"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-green"></view>
+            <view class="circle circle-green"></view>
+            <view class="circle circle-green"></view>
+        </view>
+    </view>
+
+
+<view class='contai' wx:if="{{list_show==''}}">
+  <view class='header'>
+    <view>
+      <text class='ts_dw'>已借</text><text class='ts_bs'>{{ts_yj}}</text><text class='ts_dw'>本</text>
+    </view>
+    <view class='ts_fb'>
+      <text>逾期{{ts_yq}}本，未逾期{{ts_wyq}}本</text>
+    </view>
+    <view class='ts_qf'>
+      <text>预计欠费{{count}}元,仅供参考</text>
+    </view>
+  </view>
+  <block wx:if="{{ts_yj>0}}">
+    <view class="ts_list" wx:for="{{book_list}}">
+      <view class='ts_icon'>
+        <image src='../../../images/ts/ts.png'></image>
+      </view>
+      <view class='ts_info'>
+        <view class='ts_title'>
+          <text>{{item.book_title}}</text>
+        </view>
+        <view class='ts_time'>
+          <text>{{item.book_duwtime}}</text>
+        </view>
+      </view>
+      <view class='ts_warn'>
+        <text class='day'>{{item.book_warntime}}</text>
+        <text>天</text>
+      </view>
+    </view>
+    <button type='submit' bindtap='renew' >一键续借</button>
+  </block>
+  <block wx:else>
+    <view class='nothing_img'>
+      <image  src='../../../images/ts/nothing.png'></image>
+    </view>
+    <view class='nothing_tip'>
+      <text>暂时没有在借的书哦</text>
+    </view> 
+  </block>
+  
+  
+</view>

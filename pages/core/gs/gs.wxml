@@ -1,0 +1,33 @@
+<view >
+
+   <view  class='pic'>
+   <image mode='widthFix' src='../../../images/gs/safe.png'></image>
+  </view>
+    <view class='hd'>
+    <text>校园卡挂失</text>
+  </view>
+  <view class='info'>
+    <view>
+     <view class='border'> 
+     <image class='xh' src='../../../images/gs/xh.png'></image>
+     <text>学号：</text>
+     <input type='number' name='username' bindinput='username' placeholder='请输入挂失卡学号'  class='inp'></input> 
+     </view>
+     
+     
+    </view>
+    <view>
+      <view class='border '>
+       <image class='mm' src='../../../images/gs/mm.png'></image>
+         <text>密码：</text>
+         <input name='pswrd' type='number' password='ture' bindinput='pswrd' placeholder='默认为身份证后6位数字' class='inp'>
+    </input>
+      </view>
+      
+    </view>
+  </view>
+</view>
+<view >
+  <button bindtap='gs' class='btm'>确认挂失</button>
+</view>
+<view class='sm'>申明：本操作不会记录任何用户信息</view>

@@ -1,0 +1,136 @@
+
+/*顶部余额 状态 功能区域   */
+page{
+  background-color: #EEEEEE;
+}
+.header{
+  height: 220px;
+  width: 100%;
+  background-color:#676896;
+  position: relative;
+}
+.header_tx{
+  text-align: center;
+  color: white;
+}
+.header_tx image{
+    border-radius: 100px;
+   height: 80px;
+   width: 80px;
+   margin-bottom: 10px;
+}
+.header_tx_wgz{
+ 
+  color: gray;
+  font-size: 0.9rem;
+  height: 20px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 3px;
+}
+
+.header_allye{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #393E52;
+  position: absolute;
+  bottom: 0px;
+  height: 60px;
+  color: white;
+}
+.lb{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.lb view{
+  width: 100%;
+  text-align: center;
+}
+.ms{
+  color: gray;
+  font-size: 0.9rem;
+}
+.header_allye>view{
+  width: 33.33%;
+}
+
+/*选择类型  */
+.header_type{
+  background-color: white;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  
+}
+.header_type view{
+  width: 50%;
+  text-align: center;
+  padding-top: 15px;
+  margin: 0 auto;
+  padding-bottom: 2px;
+}
+.header_type view view{
+  height: 100%;
+  padding:0 5px;
+ 
+}
+.time_choice{
+  display: flex;
+  color: gray;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: #F5F5F5;
+  opacity: 0.8;
+  align-items: center;
+  height: 35px;
+  
+}
+.time_choice text{
+  width: 10px;
+}
+.time_choice picker{
+  flex:1;
+  text-align: center;
+}
+.time_choice icon{
+  padding-right: 5px;
+}
+/*列表  */
+.list{
+  background-color: white;
+  padding: 5px;
+  color: gray;
+
+}
+.list_single_sj,.list_single_info{
+  
+  display: flex;
+  
+}
+.list_single_sj >text,.list_single_info>text{
+  width: 50%;
+}
+.list_single_info>text{
+  color: black;
+}
+.list_single{
+  border-bottom: 1px solid gainsboro;
+  padding: 10px;
+}
+.click{
+  color: #EB8893;border-bottom: 4px solid #EB8893;
+}
+.list_single_czjl{
+  display: flex;
+}
+.list_single_czjl_sj{
+  width: 80%;
+}
+.list_single_czjl_je{
+  text-align: right;
+  width: 20%;
+}

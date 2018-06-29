@@ -1,0 +1,127 @@
+page{
+  background-image: url('http://ehang.ourcauc.com/static/img/wlbj6.jpg') ;
+  
+/* 背景图不平铺 */
+background-repeat: no-repeat;
+/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+background-attachment: fixed;
+/* 让背景图基于容器大小伸缩 */
+background-size: cover;
+background-color: ghostwhite;
+
+}
+/*logo图  */
+.logo{
+  margin-top: 10%;
+  text-align: center;
+}
+.logo image{
+  width: 80px;
+  height: 80px;
+}
+.logo text{
+  font-size: 1.4rem;
+  color: #073A89;
+  text-shadow:-1px 0 white,
+                0 1px white,
+                1px 0 white,
+                0 -1px white;
+
+  
+}
+.body text{
+  font-size: 0.8rem;
+}
+
+.opsd,.npsd{
+  display: flex;
+  flex-direction:row;
+  
+}
+.opsd{
+  border-top: 1px solid #B5BEC0;
+  border-bottom:1px solid #B5BEC0;
+}
+.npsd{
+  
+  border-bottom:1px solid #B5BEC0;
+}
+.opsd text,.npsd text{
+  width: 100px;
+  
+  line-height: 50px;
+  margin-left: 5px;
+}
+input{
+ 
+  width: 100%;
+  
+  height: 50px;
+  flex: 1;
+}
+.content{
+  margin-top:20%;
+}
+.tips{
+  text-align: center;
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+}
+.tips image{
+  width: 30px;
+  height: 30px;
+   
+}
+.tips text{
+  color: gray;
+}
+.tip-info{
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+  position: absolute;
+  /* top: 0;
+  left: 8%; */
+  border-radius:5px;
+  border: 1px solid white;
+  padding: 10px;
+  width: 80%;
+  height: 70%; 
+  z-index: 100;
+  box-shadow: #D5DCE0 10px 10px 20px;
+  background-color: white;
+}
+.header{
+  border-bottom: 1px solid #B5BEC0;
+  display: flex;
+  flex-direction: row;
+}
+#ts{
+  text-align: center;
+  flex: 1;
+}
+#gb{
+  text-align: right;
+  width: 30px;
+}
+.body{
+  font-size: 0.9rem;
+}
+button{
+  cursor: pointer;
+  width: 80%;
+  border: none;
+  background: #3D93BF;
+  color: #FFF;
+  padding: 10px;
+  font-size: 15px;
+  margin: 20px auto;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 30px;
+}

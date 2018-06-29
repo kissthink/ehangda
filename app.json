@@ -1,0 +1,75 @@
+{
+  "pages":[
+   
+    "pages/index/index",
+    "pages/core/xyj/xyj",
+    "pages/core/kjs/kjs",
+    "pages/core/sw/sw",
+    "pages/news/news",
+    "pages/core/zx/zx",
+    "pages/core/zx/js",
+    "pages/core/skxx/skxx",
+    "pages/news/detail",
+    "pages/core/xl/xl",
+    "pages/core/stjs/stjs",
+    "pages/core/xxk/xxk",
+    "pages/core/xiaoli/xiaoli",
+    "pages/core/kb/add",
+    "pages/core/st/st",
+    "pages/core/jd/jd",
+    "pages/core/zd/zd",
+    "pages/my/index/index",
+    "pages/my/about/about",
+    "pages/my/log/log",
+    "pages/core/kb/kb",
+    
+   
+    "pages/core/slj/detail",
+    "pages/core/slj/slj",
+    "pages/core/xs/xs",
+    "pages/core/cj/cj",
+    "pages/core/ss/ss",
+    "pages/core/ts/ts",
+    "pages/core/mm/mm",
+    "pages/my/login/login",
+    "pages/core/ks/ks",
+   
+    "pages/core/st/detail",
+    "pages/core/tc/tc",
+    "pages/core/tc/detail",
+    "pages/core/gs/gs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"
+  },   
+   "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#18C0CB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/tabbar/sy2.png",
+        "iconPath": "images/tabbar/sy1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/tabbar/tz2.png",
+        "iconPath": "images/tabbar/tz.png",
+        "pagePath": "pages/news/news",
+        "text": "通知"
+      },
+      {
+        "selectedIconPath": "images/tabbar/qt2.png",
+        "iconPath": "images/tabbar/qt1.png",
+        "pagePath": "pages/my/index/index",
+        "text": "其他"
+      }
+    ]
+  }
+  
+}

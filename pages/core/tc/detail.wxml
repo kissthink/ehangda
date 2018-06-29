@@ -1,0 +1,12 @@
+<view class='list'>
+  <view class='list_title'>
+    <view>类型</view>
+    <view>表现值</view>
+    <view>分数</view>
+  </view>
+  <view class='list_info' wx:for="{{score}}">
+    <view>{{item.zb}}</view>
+    <view>{{item.bx}}</view>
+    <view>{{item.df}}</view>
+  </view>
+</view>

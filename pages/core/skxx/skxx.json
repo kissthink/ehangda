@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#5580A2",
+  "navigationBarTitleText": "拾卡信息",
+  "enablePullDownRefresh": true,
+  "navigationBarTextStyle": "white",
+  "backgroundTextStyle": "dark"
+}

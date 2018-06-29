@@ -1,0 +1,22 @@
+
+.header_title{
+  font-size: 1.4rem;
+  margin: 5px 0;
+}
+.header_other{
+  
+  display: flex;
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 5px;
+}
+.header_other_bm{
+  margin-right: 5px;
+}
+.detail{
+  padding: 5px;
+  color: gray;
+}
+.container{
+  padding: 10px;
+}

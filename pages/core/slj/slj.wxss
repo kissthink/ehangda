@@ -1,0 +1,80 @@
+page{
+  background-color: #E7E5E6;
+}
+.header_img{
+  width: 100%;
+  height: 200px;
+}
+.header_img image{
+  width: 100%;
+}
+/*主要信息填写区域  */
+.info{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: -40px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  height: 300px;
+  box-shadow: 3px 10px 5px #D2D2D2;
+}
+.info_title{
+  height: 40px;
+  width: 100%;
+  background-color:  #E7E5E6;
+  color: gray;
+  text-align: center;
+  line-height: 40px;
+}
+.info_detail{
+  padding: 10px;
+}
+.info_detail>view{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #D2D2D2;
+  justify-content: center;
+  align-items: center;
+}
+/*信息布局  */
+.info_detail_icon{
+  width: 50px;
+  height: 50px;
+}
+.info_detail_icon image{
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  padding-top: 12.5px;
+}
+.info_detail_input{
+  flex: 1;
+  height: 50px;
+}
+.info_detail_input input{
+  padding-top: 12.5px;
+  height: 25px;
+  text-align: left;
+  line-height: 25px;
+}
+
+button{
+  position: relative;
+  width: 12.5rem;
+  margin: 20px auto ;
+  background-color: #8BB7D7;
+  border: none;
+  border-radius: 0.3125rem;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.info_detail_img image{
+  width: 100px;
+  height: 40px;
+  vertical-align: middle;
+}
+

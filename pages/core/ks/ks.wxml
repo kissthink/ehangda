@@ -1,0 +1,65 @@
+ <view wx:if="{{list_show=='loading'}}" class="circle-loader">
+        <view class="circle-line">
+            <view class="circle circle-blue"></view>
+            <view class="circle circle-blue"></view>
+            <view class="circle circle-blue"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-yellow"></view>
+            <view class="circle circle-yellow"></view>
+            <view class="circle circle-yellow"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-red"></view>
+            <view class="circle circle-red"></view>
+            <view class="circle circle-red"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-green"></view>
+            <view class="circle circle-green"></view>
+            <view class="circle circle-green"></view>
+        </view>
+    </view>
+
+
+<view wx:if="{{list_show!='loading'}}">
+  <view class='header' wx:if="{{ks_list[0].sy>=0}}">
+    <view class='djs' >
+      <view class='title'>
+        <text>距离{{ks_list[0].kcmc}}考试还有</text>
+      </view>
+      <view class='djs_ts'>
+        <text>{{ks_list[0].sy}}</text>
+        <text class='day'>天</text>
+      </view>
+   
+      <view class='ks_info_single'>
+        <text class='ks_info_wz'>{{ks_list[0].kssj}}</text>
+        <text class='ks_info_dd'>{{ks_list[0].ksdd}}，{{ks_list[0].kszwh}}号</text>
+      </view>
+    </view>
+  </view>
+  <view class='ks_list'>
+    <view class='ks_info' wx:for="{{ks_list}}">
+      <view class='ks_info_icon'>
+        <image src='../../../images/ks/ks.png'></image>
+      </view>
+      <view class='ks_info_detail'>
+        <view>{{item.kcmc}}</view>
+        <view>{{item.kssj}}</view>
+        <view class='ks_info_js'>{{item.ksdd}}<text wx:if="{{item.kszwh>0}}">,座位号{{item.kszwh}}号</text> </view>
+      </view>
+      <view class='ks_info_day'>
+        <text>{{item.sy}}</text><text wx:if="{{item.sy>0}}">天</text>
+      </view>
+    </view>
+  </view>
+  <block wx:if="{{length==0}}">
+      <view class='nothing_img'>
+        <image mode='widthFix'  src='../../../images/ts/nothing.png'></image>
+      </view>
+      <view class='nothing_tip'>
+        <text>暂时没有考试哦，放心玩吧，下拉可刷新</text>
+      </view> 
+    </block>
+</view>

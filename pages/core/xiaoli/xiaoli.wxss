@@ -1,0 +1,33 @@
+/* pages/core/xiaoli/xiaoli.wxss */
+.hd{
+  font-size: 20px;
+  text-align: center;
+  margin: 5px
+}
+.hd2{
+  font-size: 17px;
+  text-align: center;
+  margin:3px
+}
+.flx{
+  display: flex;
+}
+.bg{
+  margin:0 5%;
+  margin-bottom: 5px;
+}
+
+.det{
+  font-size: 14px;
+  width: 100%;
+}
+.dets view{
+  border: 1px solid grey;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.txt{
+  margin: 5px;
+}

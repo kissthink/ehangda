@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#00F0D4",
+  "navigationBarTitleText": "素拓查询",
+ 
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

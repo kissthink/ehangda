@@ -1,0 +1,105 @@
+page{
+  background-color: #F0EFF5;
+  background-image: url('http://ehang.ourcauc.com/static/img/stbj.jpg') ;
+  color: white;
+}
+
+.st_type{
+  margin-top: 5%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.st_type_name{
+  color: #348DB6;
+  font-family: Microsoft Yahei;
+  margin: 0 10px;
+}
+.st_type_more{
+  width: 20px;
+}
+.st_type_detail{
+  -webkit-animation-name: fadeIn; /*动画名称*/
+-webkit-animation-duration: 3s; /*动画持续时间*/
+-webkit-animation-iteration-count: 1; /*动画次数*/
+-webkit-animation-delay: 0s; /*延迟时间*/ 
+}
+.st_type_ones{
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  width: 40%;
+  border-bottom: 1px solid gray;
+}
+.st_type_ones text{
+  padding: 0 20px;
+}
+.st_list{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation-name: fadeIn; /*动画名称*/
+  -webkit-animation-duration: 3s; /*动画持续时间*/
+  -webkit-animation-iteration-count: 1; /*动画次数*/
+  -webkit-animation-delay: 0s; /*延迟时间*/ 
+}
+.st_list >view{
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 3.5% 3.5%;
+  padding: 5px;
+}
+.st_detail{
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  width: 96%;
+  height: 96%;
+  background-color: white;
+  border-radius: 10px;
+}
+/*详情css  */
+.st_detail_header_img{
+  width: 30px;
+  position: absolute;
+  left: 90%;
+}
+.st_detail_header{
+  border-bottom: 1px solid gainsboro;
+  color: #3C3C3C;
+  text-align: center;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.slide-image{
+  width: 100%;
+}
+.st_detail_wz{
+  color: black;
+  padding: 10px;
+}
+
+.st_detail_title{
+  margin: 10px 0;
+  text-align: center;
+  
+}
+.st_detal_title_bk{
+  display: inline-block; 
+  vertical-align: top; 
+  border-radius: 0px 15px; 
+  background-color: rgb(255, 78, 77); 
+  color: rgb(254, 254, 254); 
+  padding: 2px 10px; 
+  box-sizing: border-box;
+}
+swiper{
+ height: 300px;
+}

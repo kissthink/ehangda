@@ -1,0 +1,31 @@
+page{
+  background-color: #EAEAEA;
+}
+.list{
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: white;
+  padding: 8px;
+}
+.list_info,.list_title{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.list_info view,.list_title view{
+  width: 33.33%;
+}
+.list_info view{
+  
+  border-bottom: 1px solid #CCD4D7;
+  padding:5px;
+}
+.list_title{
+  color: #3385ff;
+  border-bottom: 1px solid #CCD4D7;
+  font-size: 1.2rem;
+}
+

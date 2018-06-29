@@ -1,0 +1,97 @@
+
+<!-- <view class='sm'>注意：添加的课程保存在本地缓存，若清除本地缓存将会删除已添加课程。</view> -->
+<view class='one'>
+<view class='kcm'>
+  <view class='left'>课程名</view> 
+  <input name='name' bindinput='name' placeholder='请输入课程名'  class='inp'></input> 
+</view>
+</view>
+<view class='one'>
+  <view class='flx'>
+    <view class='left'> 上课时间</view> 
+    <picker  bindchange="day" value="{{index}}" range="{{array}}">
+      <view>
+       <view><input disabled='false' value='{{array[index0]}}' placeholder='每周周几'></input> </view>
+      </view>
+    </picker>
+</view>  
+</view>
+
+<view class='one'>
+<view   class='flx'>
+ <view class='left'> 地点</view>
+ <input  name='place' bindinput='place' placeholder='请输入上课地点'></input> </view>
+
+<view class='flx'>
+ <view class='left'> 开始时间</view>  
+ <picker id='start' bindchange="start" value="{{index}}" range="{{start_array}}">
+    <view>
+     <input disabled='false' value='{{start_array[index4]}}' placeholder='以小课为计算单位'></input> 
+   </view>
+  </picker> 
+</view>
+</view> 
+
+<view class='one'>
+<view  class='flx'>
+  <view class='left'>结束时间</view>
+  <picker  name="js" bindchange="js" value="{{index}}" range="{{start_array}}">
+    <view>
+     <input disabled='false' value='{{start_array[index3]}}' placeholder='以小课为计算单位'></input> 
+   </view>
+  </picker> 
+  
+</view>
+</view> 
+
+<view class='one'>
+<view  class='flx'>
+ <view class='left'> 开始周</view>
+ <picker bindchange="start_week" value="{{index}}" range="{{week_array}}">
+    <view>
+     <input disabled='false' value='{{week_array[index1]}}' placeholder='点击选择开始周'></input> 
+    </view>
+  </picker>
+</view>
+</view> 
+
+<view class='one'>
+<view  class='flx'>
+ <view class='left'> 结束周</view>
+ <picker bindchange="end_week" value="{{index}}" range="{{week_array}}">
+    <view>
+     <input disabled='false' value='{{week_array[index2]}}' placeholder='点击选择结束周'></input> 
+    </view>
+  </picker>
+</view>
+</view> 
+
+
+<view class='one'>
+<view  class='flx'>
+ <view class='left'> 单双周</view>
+ <picker bindchange="dsz" value="{{index}}" range="{{dsz_arr}}">
+    <view>
+     <input disabled='false' value='{{dsz_arr[index6]}}' placeholder='点击选择单双周'></input> 
+    </view>
+  </picker>
+</view>
+</view> 
+<!-- <view class='one'>
+<view class='flx'>
+ <view class='left'>授课教师</view> 
+ <input name='teacher_name' bindinput='teacher_name' placeholder='请输入授课教师名'  class='inp'></input>
+</view>
+</view> 
+
+<view class='one'>
+<view class='flx'>
+  <view class='left'>学分</view> 
+  <input name='xf' bindinput='xf' placeholder='请输入课程学分'  class='inp'></input>
+</view> -->
+
+<!-- </view>  -->
+<view class='btn-group'>
+ <button bindtap='comfri' class='btn'>确认添加</button>
+ <!-- <button bindtap='clear' class='btn'>清除</button> -->
+</view> 

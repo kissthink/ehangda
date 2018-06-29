@@ -1,0 +1,63 @@
+<view class='icon'>
+  <view>
+    <image mode='widthFix' src='../../../images/index/e.jpg'></image>
+  </view>
+  <view class='describ'>
+    <text>E航大，你的航大生活助手</text>
+  </view>
+</view>
+
+<view bindtap='clearStorage' class='list'>
+  <view class='list_icon'>
+    <image mode='widthFix' src='../../../images/index/sc.png'></image>
+  </view>
+  <view class='list_text'>
+    <text>删除本地缓存</text>
+  </view>
+  <view class='list_res'>
+    <text>会清除账号</text>
+  </view>
+</view>
+
+
+
+<view class='list'>
+  <view class='list_icon'>
+    <image mode='widthFix' src='../../../images/index/tx1.png'></image>
+  </view>
+  <view class='list_text'>
+    <text>校园卡提醒</text>
+  </view>
+  <view class='list_res'>
+    <switch data-type="xyk_no_ts" bindchange='changeStatu' checked="{{!xyk_ts}}" />
+  </view>
+</view>
+<view class='list'>
+  <view class='list_icon'>
+    <image mode='widthFix' src='../../../images/index/tx2.png'></image>
+  </view>
+  <view class='list_text'>
+    <text>网费提醒</text>
+  </view>
+  <view class='list_res'>
+    <switch data-type="wf_no_ts" bindchange='changeStatu' checked="{{!wf_ts}}" />
+  </view>
+</view>
+<view class='list'>
+  <view class='list_icon'>
+    <image mode='widthFix' src='../../../images/index/tx3.png'></image>
+  </view>
+  <view class='list_text'>
+    <text>借阅提醒</text>
+  </view>
+  <view class='list_res'>
+    <switch data-type="jy_no_ts" bindchange='changeStatu' checked="{{!jy_ts}}" />
+  </view>
+</view>
+
+<view class='copyright'>
+<view>
+  <text>易航工作室</text>
+</view>
+  <text>Copyright © 2018 All Rights Reserved</text>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#f7acbc",
+  "navigationBarTitleText": "消费账单",
+  "backgroundColor": "#e78ab0",
+  "enablePullDownRefresh": false
+}

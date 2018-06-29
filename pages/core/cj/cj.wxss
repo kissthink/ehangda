@@ -1,0 +1,75 @@
+@import "../../common/common.wxss";
+/*头部  */
+.header{
+  top:0;
+  padding: 0px;
+  margin: 0px;
+  position:fixed;
+  z-index: 5;
+  background-color:#67D3DF;
+  height: 20%;
+  width: 100%;
+  color: white;
+}
+.hader_jd{
+  font-size: 3rem;
+  text-align: center;
+}
+.header_title{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0px 3px;
+}
+.header_title>view{
+  
+  float: left;
+}
+.header_title_cj{
+  text-align: center;
+}
+.header_title_jd{
+  text-align: center;
+}
+.header_title_kc{
+  width: 70%;
+  text-align: left;
+}
+
+.header_title_cj,.header_title_jd{
+  width: 15%;
+}
+
+.cj_list{
+  position: absolute;
+  width: 100%;
+  top: 20%;
+}
+.cj_list_dg{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #878A8D;
+  
+  margin: 10px 3px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.cj_list_dg >view{
+  margin: 3px;
+}
+.cj_info_mc{
+  width: 70%;
+}
+.cj_info_fs,.cj_info_jd{
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+ 
+

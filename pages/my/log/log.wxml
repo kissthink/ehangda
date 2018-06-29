@@ -1,0 +1,86 @@
+<image mode='widthFix' src='/images/log/logo.jpg'></image>
+<view class='now_bb'>
+      <view class='list_text'>
+        <text>当前版本</text>
+      </view>
+      <view class='list_res'>
+        <text class='bb'>V0.0.7</text>
+        <text class='cc'>内测</text>
+      </view>
+</view>
+<view class='gp'>
+    <view class='hd'>
+    <text class='hd1'>V0.0.7 内测版</text>
+    <text class='time'>2018-04-26</text>
+    </view>
+    <view class='info'>
+    <text class='cont'>新增洗衣机空余情况查询
+    素拓分显示问题优化
+    登录窗逻辑调整
+    功能图标大小调整
+    修复图书续借功能
+    </text>
+    </view>
+</view>
+<view class='gp'>
+    <view class='hd'>
+    <text class='hd1'>V0.0.6 内测版</text>
+    <text class='time'>2018-04-02</text>
+    </view>
+    <view class='info'>
+    <text class='cont'>对研究生同学的体验进行大规模优化，例如成绩、课表、图书等能正常使用
+    针对职院同学的课表进行优化，可以手动添加、删除课程
+    新增网络管理模块，可以查到上网记录、充值记录、开关无感知等信息
+    新增课表可以根据日期确定周数
+    优化图书续借功能，提高成功率
+    调整功能图标顺序，方便使用
+    应修选修课合计的数据误导调整
+    显示重修、补考成绩
+    新增空教室查询
+    考试查询信息优化
+    校历错误修复
+    </text>
+    </view>
+</view>
+<view class='gp'>
+    <view class='hd'>
+    <text class='hd1'>V0.0.5 内测版</text>
+    <text class='time'>2018-03-18</text>
+    </view>
+    <view class='info'>
+    <text class='cont'>更改一些社团的信息,我们将逐步完善
+    删除易航招新宣传相关界面
+    修复课表周六、日晚存在的bug
+    调整顶部图标的顺序</text>
+    </view>
+</view>
+
+<view class='gp'>
+    <view class='hd'>
+    <text class='hd1'>V0.0.4 内测版</text>
+    <text class='time'>2018-03-12</text>
+    </view>
+    <view class='info'>
+    <text class='cont'>增加了校历功能
+    修改了卡挂失功能，防止误操作
+    成绩绩点增加了本地缓存，可下拉刷新,期末计算绩点更加方便快捷
+    更新易航招新页面，欢迎大家加入易航
+    新增还需要的选修课查询
+    修改绑定申明为自动弹出状态
+    限制通知标题、图书借阅信息字数，提升美观
+    修复E类素拓要求的分数错误
+    修复图书馆密码只能输入数字的bug
+    增加了更新日志，可以查看每次更新变动</text>
+    </view>
+</view>
+
+<view class='gp'>
+    <view class='hd'>
+      <text class='hd1'>V0.0.3 内测版</text>
+      <text class='time'>2018-03-05</text>
+    </view>
+    <view class='info'>
+    <text class='cont'>正式开始面向全校内测
+    </text>
+    </view>
+</view>

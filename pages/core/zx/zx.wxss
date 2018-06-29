@@ -1,0 +1,45 @@
+page{
+  background-color: #F5F5F5;
+}
+.header_img image{
+  width: 70px;
+  border-radius: 35px;
+  
+}
+.header_img{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: gray;
+  font-size: 0.8rem;
+  background-color: white;
+}
+.type{
+  font-weight: bold;
+  margin: 3px 15px;
+}
+.content{
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.content input,.content picker,.content textarea{
+  height: 35px;
+  margin: 5px;
+  padding: 0 5px;
+  width: 100%;
+}
+button{
+  position: relative;
+  width: 12.5rem;
+  margin: 20px auto ;
+  background-color: #1FABAA;
+  border: none;
+  border-radius: 0.3125rem;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  overflow: hidden;
+}

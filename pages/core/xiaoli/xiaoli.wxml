@@ -1,0 +1,36 @@
+<view class='hd'>中国民航大学2018学年校历</view>
+<view class='hd2'>第二学期</view>
+
+<view class='flx bg'>
+ <view class='det'>
+  <view wx:for="{{date}}" class='flx dets' style="background-color:{{colorArrays[0]}}">
+   <view>{{date[index]}}</view>
+   <view>{{info[index]}}</view>
+  </view>
+  <view wx:for="{{date}}" class='flx dets' style="background-color:{{colorArrays[1]}}">
+   <view>{{date1[index]}}</view>
+   <view>{{info1[index]}}</view>
+  </view>
+  <view wx:for="{{date}}" class='flx dets' style="background-color:{{colorArrays[2]}}">
+   <view>{{date2[index]}}</view>
+   <view>{{info2[index]}}</view>
+  </view>
+  <view wx:for="{{date}}" class='flx dets' style="background-color:{{colorArrays[3]}}">
+   <view>{{date3[index]}}</view>
+   <view>{{info3[index]}}</view>
+  </view>
+ </view>
+</view>
+<view class='txt'>
+ <text>第二学期：
+（1）2月28日上课
+（2）第1周周末选课微调、第2周周末选考
+（3）学期中考试时间：选考第7、8周周末 期中考试第10周末
+（4）学期末考试时间：7月5日-7月13日
+（5）毕业论文答辩 6月8日-6月12日
+（6）本科、高职毕业典礼 6月22日
+（7）清明节，五一节，端午节各放假一天
+（8）学生暑假7月14日-8月24日
+ </text>
+ <text style='color: gray; font-size: 1rem;'>注：以上均为学校官网信息，若有不同，请以实际信息为准。</text>
+</view>

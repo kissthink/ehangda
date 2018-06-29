@@ -1,0 +1,84 @@
+<view class='header_img'>
+      <image mode='widthFix' src='{{avatarUrl}}'></image>
+      <view class='nickname'>
+        <text>{{nickName}}</text>
+      </view>
+</view>
+<form bindsubmit="formSubmit" >
+<view>
+  <view class='type'>姓名</view>
+  <view class='content'>
+    <input name='xm' type='text'></input>
+  </view>
+</view>
+
+<view>
+  <view class='type'>学号</view>
+  <view class='content'>
+    <input name='xh' type="number"></input>
+  </view>
+</view>
+<view>
+  <view class='type'>专业</view>
+  <view class='content'>
+    <input name='zy' type='text'></input>
+  </view>
+</view>
+<view>
+  <view class='type'>绩点</view>
+  <view class='content'>
+    <input name='jd' type="digit"></input>
+  </view>
+</view>
+
+<view>
+  <view class='type'>手机号</view>
+  <view class='content'>
+    <input name='sjh'  type="number"></input>
+  </view>
+</view>
+
+<view>
+  <view class='type'>微信号</view>
+  <view class='content'>
+    <input name='wx' type='text'></input>
+  </view>
+</view>
+
+<view>
+  <view class='type'>意向部门1</view>
+  <view class='content'>
+    <picker bindchange="bindPickerChange1" value="{{index}}" range="{{bm_list}}">
+    <view class="picker">
+      当前选择：{{bm1}}
+    </view>
+  </picker>
+  </view>
+</view>
+
+<view>
+  <view class='type'>意向部门2</view>
+  <view class='content'>
+    <picker bindchange="bindPickerChange2" value="{{index}}" range="{{bm_list}}">
+    <view class="picker">
+      当前选择：{{bm2}}
+    </view>
+  </picker>
+  </view>
+</view>
+
+<view>
+  <view class='type'>自我介绍</view>
+  <view class='content'>
+      <textarea style='height:100px'  bindblur="bindTextAreaBlur1" placeholder="" />
+  </view>
+</view>
+
+<view>
+  <view class='type'>兴趣爱好</view>
+  <view class='content'>
+      <textarea style='height:100px'  bindblur="bindTextAreaBlur2"  placeholder="" />
+  </view>
+</view>
+<button formType="submit">我要报名</button>
+</form>

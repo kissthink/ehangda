@@ -1,0 +1,42 @@
+<view class='header_img'>
+  <image mode='widthFix' src='http://ehangopen.ourcauc.com/static/img/slj.png'></image>
+</view>
+
+  <view class='info'>
+    <view class='info_title'>
+      <text>四六级成绩查询</text>
+    </view>
+    <form bindsubmit='search'>
+      <view class='info_detail'>
+        <view class='info_detail_name'>
+          <view class='info_detail_icon'>
+            <image src='../../../images/slj/xm.png'></image>
+          </view>
+          <view class='info_detail_input'>
+            <input name='name' type='text' placeholder='请输入姓名'></input>
+          </view>
+        </view>
+        <view class='info_detail_zkzh'>
+          <view class='info_detail_icon'>
+            <image src='../../../images/slj/zkzh.png'></image>
+          </view>
+          <view class='info_detail_input'>
+            <input name='kh' maxlength="15" bindinput='get_code' type='text' placeholder='请输入准考证号'></input>
+          </view>
+        </view>
+        <view class='info_detail_yzm'>
+          <view class='info_detail_icon'>
+            <image src='../../../images/slj/yzm.png'></image>
+          </view>
+          <view class='info_detail_input'>
+            <input name='v' type='text' placeholder='请输入验证码'></input>
+          </view>
+          <view class='info_detail_img'>
+            <image bindtap='get_code_fun' src='{{code_url}}'></image>
+          </view>
+        </view>
+      </view>
+      <button type='submit' form-type='submit'>点击查询</button>
+    </form>
+  </view>
+

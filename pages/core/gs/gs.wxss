@@ -1,0 +1,62 @@
+/* pages/core/gs/gs.wxss */
+.hd{
+  font-size: 25px;
+  text-align: center;
+  margin: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pic{
+  display: flex;
+  justify-content: center;
+}
+.pic image{
+  margin-top: 20px;
+  display:block;
+  width:250rpx;
+}
+.info{
+  margin: 5px 8px;
+  margin-top: 60px;
+}
+.info view{
+   margin-top: 13px
+}
+.flx{
+  display: flex;
+}
+.xh{
+  height: 20px;
+  width: 20px;
+  margin: 0px 3px;
+}
+.mm{
+  height: 20px;
+  width: 20px;
+  margin: 0px 3px;
+}
+.border{
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 15px;
+  padding: 5px;
+}
+.btm{
+  margin-top: 70px;
+  width: 85%;
+  background-color: #1999DB;
+  height: 44px;
+  border-radius: 22px;
+  color: white;
+}
+
+.sm{
+  color: gray;
+  bottom: 80px;
+  text-align: center;
+  width: 100%;
+  font-size: 0.8rem;
+  margin-top: 20px;
+
+}

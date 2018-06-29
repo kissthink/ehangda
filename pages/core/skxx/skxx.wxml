@@ -1,0 +1,41 @@
+<view wx:if="{{load}}"  class="circle-loader">
+        <view class="circle-line">
+            <view class="circle circle-blue"></view>
+            <view class="circle circle-blue"></view>
+            <view class="circle circle-blue"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-yellow"></view>
+            <view class="circle circle-yellow"></view>
+            <view class="circle circle-yellow"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-red"></view>
+            <view class="circle circle-red"></view>
+            <view class="circle circle-red"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-green"></view>
+            <view class="circle circle-green"></view>
+            <view class="circle circle-green"></view>
+        </view>
+    </view>
+<view  class='search'>
+  <icon type="search" size="23" class='search_icon'/>
+
+    <input placeholder='请输入关键词' value='{{keyword}}' bindconfirm='search' confirm-type="search"></input>
+</view> 
+
+
+
+<view wx:for="{{list}}" class='card'>
+  <view class='card_img'>
+    <image src='/images/skxx/skxx.jpg' mode='widthFix'></image>
+  </view>
+  <view bindtap='showDetail' data-info='{{item.address}}' class='card_detail'>
+    <view class='card_detail_name'>姓名：{{item.owner}}</view>
+    <view class='card_detail_xh'>学号：{{item.student_id}}</view>
+    <view class='card_detail_sj'>时间：{{item.date}}</view>
+    <view class='card_detail_sj'>领取地点：点击查看</view>
+  </view>
+</view>

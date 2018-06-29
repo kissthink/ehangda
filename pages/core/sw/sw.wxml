@@ -1,0 +1,65 @@
+<view class='header'>
+  <view class='header_tx'>
+  <view>
+     <image src='{{tx_url}}'></image>
+  </view>
+   
+    
+    <text bindtap='change_statu' class='header_tx_wgz'>无感知{{wl_info.status}}</text>
+  </view>
+  <view class='header_allye'>
+    <view class='header_allye_yyll lb'>
+      <view>{{wl_info.useFlow}}MB</view>
+      <view class='ms'>本月已用</view>
+    </view>
+    <view class='header_allye_kyll lb'>
+       <view>{{wl_info.leftMoney*1000}}MB</view>
+      <view class='ms'>剩余</view>
+    </view>
+     <view class='header_allye_wfye lb'>
+       <view>{{wl_info.leftMoney}}元</view>
+        <view class='ms'>余额</view>
+     </view>
+  </view>
+</view>
+
+<view class='header_type'>
+    <view bindtap='change' data-id='1' class='header_type_swjl'><view class='{{class_one}}'>上网记录</view></view>
+    <view bindtap='change' data-id='2' class='header_type_czjl'><view class='{{class_two}}'>充值记录</view></view>
+</view>
+<view class='time_choice'>
+    <picker id="start" mode="date" value="{{date}}" bindchange="bindDateChange">
+     {{start}}
+  </picker>
+  <text>></text>
+  <picker id="end" mode="date" value="{{date}}" bindchange="bindDateChange">
+     {{end}}
+  </picker>
+  <icon bindtap='search' type="search" size="23" class='search_icon'/>
+</view>
+
+<view class='list' wx:if="{{class_one=='click'}}">
+  <view wx:for="{{record_1.rows}}" class='list_single'>
+    <view class='list_single_sj'>
+      <text>上：{{item.loginTime}}</text>
+      <text>下：{{item.logoutTime}}</text>
+    </view>
+    <view class='list_single_info'>
+      <text>流量：{{item.flow}}MB</text>
+      <text>ip：{{item.userIp}}</text>
+    </view>
+  </view>
+ 
+</view>
+
+<view class='list'wx:else>
+
+  <view wx:for="{{record_2.rows}}" class='list_single'>
+    <view class='list_single_czjl'>
+      <text class='list_single_czjl_sj'>{{item[0]}}</text>
+      <text class='list_single_czjl_je'>{{item[2]}}元</text>
+    </view>
+  </view>
+
+ 
+</view>

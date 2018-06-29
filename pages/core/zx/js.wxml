@@ -1,0 +1,11 @@
+<import src="/wxParse/wxParse.wxml"/>
+<view class='jj'>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+
+</view>
+<!-- 
+<navigator url='/pages/core/zx/zx'>
+  <view  class='bm'>
+  <text>点此报名</text>
+</view>
+</navigator> -->

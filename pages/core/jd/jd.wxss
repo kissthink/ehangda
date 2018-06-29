@@ -1,0 +1,60 @@
+@import "../../common/common.wxss";
+.kc_list{ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid gainsboro;
+  padding: 10px;
+}
+.kc_list_kcmc,.kc_list_xf{
+  width: 70%;
+}
+.kc_list_kcmc,.kc_list_fs{
+  color: black;
+}
+.header{
+  position: absolute;
+  width: 100%;
+  background-color: #23346A;
+  height: 23%;
+  text-align: center;
+}
+.header text{
+  color: white;
+  font-size: 3rem;
+}
+.jd_list{
+  position: absolute;
+  top: 23%;
+  height: 80%;
+  overflow: auto;
+  color: gray;
+}
+
+.kc_list_xf{
+  display: flex;
+  flex-direction: row;
+  
+}
+.kc_list_xf text{
+  
+  font-size: 1rem;
+  height: 30px;
+  line-height: 30px;
+}
+.picker text{
+  line-height: 30px;
+}
+.kc_list_xf input{
+  height: 30px;
+  width: 100px;
+}
+
+.tip image{
+  width: 23px;
+}
+.tip{
+  color: #cdcdcd;
+  
+}
+

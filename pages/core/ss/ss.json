@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#34A553",
+  "navigationBarTitleText": "图书检索",
+  "enablePullDownRefresh": false,
+  "navigationBarTextStyle": "white"
+}

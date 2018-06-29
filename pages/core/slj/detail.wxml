@@ -1,0 +1,62 @@
+<view class='header_img'>
+  <image mode='widthFix' src='http://ehangopen.ourcauc.com/static/img/slj.png'></image>
+</view>
+<view class='containers'>
+  <view class='header_title1'>
+    <text>大学英语{{dj}}考试成绩单</text>
+  </view>
+  
+  <view class='header_logo'>
+    <image src='../../../images/slj/cet_logo.png'></image>
+  </view>
+  <view class='gr_info'>
+    <view class='gr_info_name'>
+      <text>姓名：{{info[1]}}</text>
+    </view>
+    <view class='gr_info_zkzh'>
+      <text>准考证号：{{info[0]}}</text>
+    </view>
+  </view>
+  <view class='cj_list'>
+    <view class='cj_list_zf'>
+      <view class='cj_list_type'>
+        <text>总分</text>
+      </view>
+      <view class='cj_list_fs'>
+        <text>{{info[3]}}</text>
+      </view>
+    </view>
+    <view class='cj_list_dx'>
+      <view class='cj_list_type'>
+        <text>听力</text>
+      </view>
+      <view class='cj_list_fs'>
+        <text>{{info[5]}}</text>
+      </view>
+    </view>
+    <view class='cj_list_dx'>
+      <view class='cj_list_type'>
+        <text>阅读</text>
+      </view>
+      <view class='cj_list_fs'>
+        <text>{{info[6]}}</text>
+      </view>
+    </view>
+    <view class='cj_list_dx'>
+      <view class='cj_list_type'>
+        <text>写作和翻译</text>
+      </view>
+      <view class='cj_list_fs'>
+        <text>{{info[7]}}</text>
+      </view>
+    </view>
+    <view class='cj_list_dx'>
+      <view class='cj_list_type'>
+        <text>口语等级</text>
+      </view>
+      <view class='cj_list_fs'>
+        <text>{{info[9]}}</text>
+      </view>
+    </view>
+  </view>
+</view>

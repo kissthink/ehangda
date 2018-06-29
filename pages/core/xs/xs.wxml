@@ -1,0 +1,29 @@
+<view  class='search'>
+  <icon type="search" size="23" class='search_icon'/>
+
+    <input placeholder='请输入课程关键词' value='{{keyword}}' bindconfirm='searchXX' confirm-type="search"></input>
+</view> 
+<block wx:if="{{cs==1}}">
+  <view class='list'>
+  <view wx:for="{{list}}" class='list_single'>
+    <view class='list_icon'>
+      <image  src='../../../images/xs/icon.png'></image>
+    </view>
+    <view class='list_info'>
+      <view class='list_info_title'>{{item.kcmc}}</view>
+      <view class='list_info_info'>{{item.xf}}学分，重要系数{{item.zyxs}}</view>
+    </view>
+  </view>
+  </view>
+</block>
+
+  
+<block wx:else>
+  <view class='nothing_img'>
+    <image  src='../../../images/ts/nothing.png'></image>
+  </view>
+  <view class='nothing_tip'>
+    <text>请输入关键词搜索</text>
+  </view> 
+</block>
+

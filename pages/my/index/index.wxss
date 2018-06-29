@@ -1,0 +1,102 @@
+page{
+  background-color: #F0EFED;
+}
+/*个人信息块  */
+.header{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  padding: 0px 10px;
+  background-color: white;
+  
+}
+.reinfo_text button{
+  width: 100%;
+  text-align: left;
+}
+.header .header_img{
+  width: 100px;
+  height: 100px;
+}
+.header >view{
+  display: flex;
+  
+  align-items: center;
+}
+.header .header_img image{
+  width: 80px;
+  border-radius: 5px;
+}
+.more_icon{
+  width: 20px;
+}
+.header .header_perinfo{
+  flex: 1;
+}
+.statu{
+  color: gray;
+}
+/* 信息反馈块 */
+.reinfo,.reinfo > view{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+}
+.reinfo{
+  padding: 0px 10px;
+}
+.reinfo .reinfo_icon{
+  width: 50px;
+  height: 50px;
+}
+.reinfo .reinfo_text{
+  flex: 1;
+  font-size: 1rem;
+}
+.icon{
+  width: 30px;
+}
+/*关于  */
+.gy{
+  margin-top: 20px;
+}
+/*绑定按钮    */
+.bd{
+  width: 100%;
+}
+.btn_bd{
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  width: 90%;
+  border: none;
+  background: #E45C5C;
+  color: #FFF;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin: 20px 5%;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 30px;
+}
+.reinfo_text button{
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1rem;
+}
+/*反馈信息按钮  */
+.reinfo_text button::after{
+  border: 0px;
+
+}
+/*易航网域名*/
+.copyright{
+  color: gray;
+  bottom: 80px;
+  text-align: center;
+  width: 100%;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}

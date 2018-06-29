@@ -1,0 +1,11 @@
+
+<view class='class_list'>
+  <view class='class_list_header'>
+    <view class='class_list_header_icon'>
+      <image mode='widthFix' src='../../../images/sy/kb_list.png'></image>
+    </view>
+    <view class='class_list_header_text'>
+      <text>课表</text>
+    </view>
+  </view>
+</view>

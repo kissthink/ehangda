@@ -1,0 +1,106 @@
+page{
+  background-color: #F2F6F9;
+}
+.header{
+  height: 30px;
+  background-color: #0F5E99;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: 0.9rem;
+  align-items: center;
+}
+.header_date{
+  width: 50%;
+}
+.tip{
+  font-size: 0.8rem;
+  color: gray;
+  margin-top: 6px;
+}
+.header_week{
+  flex:1;
+  text-align: right;
+}
+.header_desciption{
+  background-color: #033155;
+  height: 100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.list{
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid gainsboro;
+
+}
+.list .list_description{
+  width: 30%;
+}
+.list_value{
+  flex: 1;
+}
+.list_value{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn{
+  margin: 10px;
+}
+button {  
+        width: 95%;  
+        padding:1px;  
+        background-color: #428bca;  
+        border-color: #357ebd;  
+        color: #fff;  
+        border-radius: 10px; /* future proofing */  
+        -khtml-border-radius: 10px; /* for old Konqueror browsers */  
+        text-align: center;  
+        vertical-align: middle;  
+        border: 1px solid transparent;  
+ 
+      }  
+
+/*detail   */
+.class_list_list{
+  padding-left: 20px;
+}
+.class_list_header_icon{
+  width: 30px;
+}
+.class_list_header_info{
+ 
+}
+.class_list_header_icon image{
+  width: 25px;
+}
+.class_list_header{
+  display: flex;
+  padding: 5px;
+  color: #0F5E99;
+}
+.class_list{
+  background-color: white;
+  margin-top: 15px;
+
+}
+.class_list_list_detail{
+  border-bottom: 1px solid gainsboro;
+  padding: 5px;
+  display: flex;
+}
+.pos{
+  width: 80%;
+}
+.statu{
+  flex:1;
+  color: #0F5E99;
+  text-align: right;
+}

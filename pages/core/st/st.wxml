@@ -1,0 +1,46 @@
+
+<view wx:if="{{list_show=='loading'}}" class="circle-loader">
+        <view class="circle-line">
+            <view class="circle circle-blue"></view>
+            <view class="circle circle-blue"></view>
+            <view class="circle circle-blue"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-yellow"></view>
+            <view class="circle circle-yellow"></view>
+            <view class="circle circle-yellow"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-red"></view>
+            <view class="circle circle-red"></view>
+            <view class="circle circle-red"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-green"></view>
+            <view class="circle circle-green"></view>
+            <view class="circle circle-green"></view>
+        </view>
+    </view>
+
+
+<view wx:if="{{list_show!='loading'}}">
+<view class='title' style='display:{{list_show}}'>
+  <view class='fz'>
+    <text>{{zf}}</text><image bindtap='to' src='../../../images/tc/more.png'></image>
+  </view>
+  <view class='type'>
+    <text>总分</text>
+  </view>
+</view>
+<view class='list' wx:for="{{score_list}}"  >
+  <view class='st_icon'>
+    <image src='../../../images/st/{{item.icon}}'></image>
+  </view>
+  <view class='st_name'>
+    <text>{{item.name}}</text> 
+  </view>
+  <view class='st_score'>
+  <text class='score'>{{item.score}}</text>
+  </view>
+</view>
+</view>

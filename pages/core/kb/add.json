@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#7cba23",
+    "navigationBarTitleText": "添加课程",
+    "enablePullDownRefresh": true,
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark"
+}

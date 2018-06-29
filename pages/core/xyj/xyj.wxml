@@ -1,0 +1,39 @@
+<view class='header_desciption'>
+  <view>洗衣机查询系统</view>
+  <view class='tip'>数据每分钟更新一次</view>
+</view>
+
+
+<view class='list'>
+  <view class='list_description'>
+    请选择公寓
+  </view>
+  <view class='list_value'>
+     <picker  bindchange="change_gy" value="{{index}}" range="{{gy_info}}">
+    <view>
+     <input disabled='false' value='{{gy_info[index]}}' placeholder='点击选择'></input> 
+   </view>
+  </picker> 
+  </view>
+</view>
+
+<!-- <view class='btn'>
+  <button >查找空教室</button>
+</view> -->
+<view class='class_list'>
+  <view class='class_list_header'>
+    <view class='class_list_header_icon'>
+      <image src='/images/kjs/kjs.png' mode='widthFix'></image>
+    </view>
+    <view class='class_list_header_info'>
+      <text>洗衣机信息</text>
+    </view>
+  </view>
+  <view class='class_list_list'>
+    <view wx:for="{{list}}" class='class_list_list_detail'>
+      <text class='pos'>{{item.MachineName}}</text>
+       <text class='statu'>{{item.statu}}</text>
+    </view>
+
+  </view>
+</view>

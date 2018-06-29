@@ -1,0 +1,53 @@
+@import "../about/about.wxss";
+page{
+  background-color: ghostwhite;
+}
+image{
+  width: 100%;
+}
+.gp{
+  background-color: #fff;
+  margin-top: 8px;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+.hd1{
+   width: 200px;
+}
+.hd{
+  margin-top:3px;
+  margin-left: 10px;
+ display: flex;
+}
+
+.time{
+  flex: 1;
+  color: gray;
+  padding-right: 10px;
+  text-align: right;
+}
+.info{
+  margin-left: 15px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border-left: 3px solid gainsboro;
+  padding: 5px;
+  font-size: 14px;
+}
+.now_bb{
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 8px;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+
+}
+.list_res{
+  font-size: 0.8rem;
+}
+.list_res{
+  flex: 1;
+  text-align: right;
+}

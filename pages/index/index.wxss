@@ -1,0 +1,216 @@
+page{
+  background-color: #F0EFF5;
+  background-image: url('http://ehang.ourcauc.com/static/img/sybj2.jpg') ;
+}
+swiper-item{
+  background-color: white;
+}
+swiper{
+  height: 190px;
+}
+.class_list,.wl_list,.card_list{
+  width: 95%;
+  border-radius: 8px;
+  background-color: #ECF7F9;
+  margin: 2.5% auto;
+}
+.class_list_header{
+  border-bottom: 1px dotted gainsboro;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: gray;
+}
+.class_list_header_icon{
+  display: flex;
+  align-items: center;  
+  margin: 7px;
+}
+.class_list_header_icon image{
+  width: 23px;
+}
+.class_list_header_sx{
+  flex: 1;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+}
+.class_list_header_sx >view{
+  display: flex;
+  align-items: center;
+}
+.class_list_header_sx image{
+  width: 23px;
+}
+/*具体的课程  */
+.class_list_detail{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px dotted gainsboro;
+}
+.class_list_detail_js{
+  width: 100rpx;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+.class_list_detail_info{
+  flex: 1;
+  margin-left: 30rpx;
+  padding: 5px;
+}
+
+.class_list_detail_info_pos{
+  color: gray;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+.class_list_detail_info_pos image,.class_list_detail_info_name image{
+  width: 30rpx;
+}
+/*查看详细课表  */
+.kc_list_footer{
+  color: gray;
+  text-align: center;
+  background-color: #E6E7EC;
+  font-size: 1rem;
+}
+/*上网设备管理  */
+.sw_list{
+  display: flex;
+  align-items: center;
+  
+  padding: 5px;
+  border-bottom: 1px dotted gainsboro;
+}
+.sw_list image{
+  width: 23px;
+}
+.sw_list_icon{
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
+.sw_list_ll{
+  text-align: left;
+}
+.sw_list button{
+  padding: 2px 4px; 
+  display: inline;
+  border: 1px solid #259EDD;
+  background-color: transparent;
+}
+.sw_list_zx{
+  flex: 1;
+  text-align: right;
+}
+.class_list{
+    background-image: url('http://ehang.ourcauc.com/static/img/kbsy6.jpg') ;
+  
+/* 背景图不平铺 */
+background-repeat: no-repeat;
+/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+background-attachment: fixed;
+/* 让背景图基于容器大小伸缩 */
+background-size: cover;
+}
+/*小图标  */
+.core_list{
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.core_list >view{
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+}
+.core_list_single_icon image{
+  width: 40px;
+  /* border-radius: 20px; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.core_tz{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+}
+.core_list_single_icon{
+  /* width: 100%; */
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.core_list_single_title{
+  margin-top: 3px;
+  color: gray;
+  font-size: 0.8rem;
+}
+/*校园卡  */
+
+.card_list{
+  background-image: url('http://ehang.ourcauc.com/static/img/xykbj4.jpg') ;
+
+/* 让背景图基于容器大小伸缩 */
+background-size: cover;
+}
+.ye{
+  height: 80px;
+ 
+  
+  margin-left: 20px;
+}
+.sz{
+  font-size: 3rem;
+  line-height: 80px;
+}
+/*加载中小图标  */
+.loading_gif{
+  width: 15px;
+}
+/*未绑定  */
+.yh_img{
+  width: 100%;
+  text-align: center;
+}
+.yh{
+  width: 40%;
+  margin: 20px auto;
+}
+.bd{
+  color: gray;
+  width: 100%;
+  text-align: center;
+}
+.bd_an button{
+    background-color: #5cb85c;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+.tip{
+  /* color: #CABFBF; */
+}

@@ -1,0 +1,32 @@
+<view  class='search'>
+<icon type="search" size="23" class='search_icon'/>
+  <input placeholder='输入关键词' value='{{keyword}}' bindconfirm='search' confirm-type="search" bindinput='bindKeyWordInput'></input>
+</view>
+<view class='info'>
+<text>图书</text>
+</view>
+<view class='book_list'>
+  <view class='book_info' wx:for="{{book_list}}">
+    <view class='book_info_detail'>
+      <view class='book_title'><image src='../../../images/ss/ts.png'></image><text>{{item.title}}</text></view>
+      <view class='book_position'><image src='../../../images/ss/wz.png'></image><text>{{item.where}}</text></view>
+    </view>
+    <view class='book_info_statu'>
+      <view wx:if="{{item.statu=='在馆'}}">
+        <button class='book_btn_statu_on'>{{item.statu}}</button>
+      </view>
+      <view wx:else>
+        <button class='book_btn_statu_off'>{{item.statu}}</button>
+      </view>
+      
+    </view>
+  </view>
+</view>
+ <block wx:if="{{length==0}}">
+      <view class='nothing_img'>
+        <image mode='widthFix'  src='../../../images/ts/nothing.png'></image>
+      </view>
+      <view class='nothing_tip'>
+        <text>暂时没有没有你要搜的书哦</text>
+      </view> 
+  </block>

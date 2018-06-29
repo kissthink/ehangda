@@ -1,0 +1,60 @@
+<navigator url='../login/login'>
+  <view class='header'>
+    <view class='header_img'>
+      <image mode='widthFix' src='{{avatarUrl}}'></image>
+    </view>
+    <view class='header_perinfo'>
+    <view>
+      <view>{{nickName}}</view>
+      <view wx:if="{{!is_yz}}" class='statu'>未绑定，点击绑定</view>
+      <view wx:else class='statu'>已绑定，点击可重新绑定</view>
+    </view>
+    </view>
+    <view class='header_more'>
+      <image class='more_icon' mode='widthFix' src='../../../images/index/more.png'></image>
+    </view>
+  </view>
+</navigator>
+<view class='reinfo'>
+  <view class='reinfo_icon'>
+    <image mode='widthFix' class='icon' src='../../../images/index/fk.png'></image>
+  </view>
+  <view class='reinfo_text'>
+    <button open-type="contact">信息反馈</button>
+  </view>
+  <view class='reinfo_more'>
+      <image class='more_icon' mode='widthFix' src='../../../images/index/more.png'></image>
+  </view>
+</view>
+<navigator url='../about/about'>
+  <view class='reinfo gy'>
+    <view class='reinfo_icon'>
+      <image mode='widthFix' class='icon' src='../../../images/index/gy.png'></image>
+    </view>
+    <view class='reinfo_text'>
+      <text>设置</text>
+    </view>
+    <view class='reinfo_more'>
+        <image class='more_icon' mode='widthFix' src='../../../images/index/more.png'></image>
+    </view>
+  </view>
+</navigator>
+<navigator url='../log/log'>
+  <view class='reinfo gy'>
+    <view class='reinfo_icon'>
+      <image mode='widthFix' class='icon' src='/images/index/xin.png'></image>
+    </view>
+    <view class='reinfo_text'>
+      <text>关于</text>
+    </view>
+    <view class='reinfo_more'>
+        <image class='more_icon' mode='widthFix' src='/images/index/more.png'></image>
+    </view>
+  </view>
+</navigator>
+
+
+
+<navigator wx:if="{{!is_yz}}" url='../login/login'>
+  <button class='btn_bd' form-type='submit'>点击绑定</button>
+</navigator>

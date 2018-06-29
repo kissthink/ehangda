@@ -1,0 +1,13 @@
+<view class='list'>
+  <view class='list_title'>
+    <view>类型</view>
+    <view>活动</view>
+    <view>社团名称</view>
+  </view>
+  <view class='list_info' wx:for="{{st_detail_list}}">
+    <view>{{item.lx}}</view>
+    <view>{{item.name}}</view>
+    <view>{{item.st}}</view>
+  </view>
+  <view class='tip'><text>仅显示部分数据</text></view>
+</view>

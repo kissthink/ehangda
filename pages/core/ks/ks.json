@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#2AA8E2",
+  "navigationBarTitleText": "考试时间查询",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "navigationBarTextStyle": "white"
+}

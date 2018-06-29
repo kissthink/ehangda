@@ -1,0 +1,209 @@
+
+<swiper indicator-dots="true"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block>
+    <swiper-item>
+      <view class='core_list'>
+        <view  wx:for="{{core_list}}" class='core_list_single'>
+        <view bindtap='check' class='core_tz' data-url='{{item.url}}'>
+          <view style='background-color: {{colorArrays[index]}};' class='core_list_single_icon' >
+            <image mode='widthFix' src='/images/core2/{{item.icon}}'></image>
+          </view>
+          <view class='core_list_single_title'>
+            <text>{{item.title}}</text>
+          </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+      <swiper-item>
+      <view class='core_list'>
+        <view  wx:for="{{core_list2}}" class='core_list_single'>
+         <view bindtap='check' class='core_tz' data-url='{{item.url}}'>
+        
+        
+          <view style='background-color: {{colorArrays[index+7]}};' class='core_list_single_icon'>
+            <image mode='widthFix' src='/images/core2/{{item.icon}}'></image>
+          </view>
+          <view class='core_list_single_title'>
+            <text>{{item.title}}</text>
+          </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    
+  </block>
+</swiper>
+
+<block wx:if="{{is_bd}}">
+  <view bindtap='redirect' wx:if="{{gg_show.statu==1}}" data-type='{{gg_show.type}}' data-url='/pages/core/zx/js' class='class_list'>
+     
+     
+     <view  class='class_list_header'>
+    <view class='class_list_header_icon'>
+      <image mode='widthFix' src='../../images/tabbar/tz2.png'></image>
+    </view>
+    <view class='class_list_header_text'>
+      <text>{{gg_show.title}}</text>
+    </view>
+    <view class='class_list_header_sx' >
+      <view>
+        <image  mode='widthFix' src='../../images/sy/tip.png'></image>
+      </view>
+      <view>
+        <text class='tip'>{{gg_show.tip}}</text>
+      </view>
+    </view>
+  </view>
+  </view>
+
+  <view class='class_list'>
+  <view class='class_list_header'>
+    <view class='class_list_header_icon'>
+      <image mode='widthFix' src='../../images/sy/kb_list.png'></image>
+    </view>
+    <view wx:if="{{statu.kb==1}}" class='class_list_header_text'>
+      <text>星期{{xqj}}课表</text>
+    </view>
+    <view wx:if="{{statu.kb==0}}" class='class_list_header_text'>
+      <text>课表加载中</text>
+      <image mode='widthFix' class='loading_gif' src='/images/sy/loading.gif'></image>
+    </view>
+    <view class='class_list_header_sx' bindtap='sx_kb'>
+      <view>
+        <image  mode='widthFix' src='../../images/sy/sx.png'></image>
+      </view>
+      <view>
+        <text>刷新</text>
+      </view>
+    </view>
+  </view>
+  <block wx:if="{{statu.kb==1}}">
+    <view class='class_list_detail' wx:for="{{today_kc}}">
+    <view class='class_list_detail_js'>
+      <text>{{item.js}}</text>
+    </view>
+    <view class='class_list_detail_info'>
+      <view class='class_list_detail_info_name'>
+        <image mode='widthFix' src='../../images/sy/kc.png'></image>
+        <text>{{item.kcmc}}</text>
+      </view>
+      <view class='class_list_detail_info_pos'>
+        <view>
+          <image mode='widthFix' src='../../images/sy/wz.png'></image>
+        </view>
+        <view>
+          <text>{{item.df}}</text>
+        </view>
+        
+      </view>
+    </view>
+  </view>
+  <view class='kc_list_footer'>
+    <navigator url='/pages/core/kb/kb'>
+      <view>
+      <text>查看完整课表</text>
+    </view>
+    </navigator>
+    
+  </view>
+  </block>
+</view>
+
+
+
+<view class='wl_list'>
+  <view class='class_list_header'>
+    <view class='class_list_header_icon'>
+      <image mode='widthFix' src='../../images/sy/wl.png'></image>
+    </view>
+    <view wx:if="{{statu.wl==1}}" class='class_list_header_text'>
+      <text>网络管理</text>
+    </view>
+     <view wx:if="{{statu.wl==0}}" class='class_list_header_text'>
+      <text>网络管理加载中</text>
+      <image mode='widthFix' class='loading_gif' src='/images/sy/loading.gif'></image>
+    </view>
+   
+    <navigator hover-class="none"  url='/pages/core/sw/sw' wx:if="{{statu.wl==1}}" class='class_list_header_sx'>
+      <view>
+        <image  mode='widthFix' src='../../images/sy/ye.png'></image>
+      </view>
+      <view>
+        <text>{{wl_ye}}元</text>
+      </view>
+    </navigator>
+  </view>
+  <block wx:if="{{statu.wl==1}}">
+    <view class='sw_list' wx:for="{{wl_dev}}">
+    <view class='sw_list_icon'>
+      <image mode='widthFix' src='/images/sy/{{item.icon}}'></image>
+      <text>{{item.dev_name}}</text>
+    </view>
+    <view class='sw_list_ll'>
+      <text>{{item.dev_ll}}KB</text>
+    </view>
+    <view class='sw_list_zx'>
+      <button bindtap='wl_zx' data-id="{{item.dev_id}}">注销</button>
+    </view>
+  </view>
+  </block>
+  
+  
+
+</view>
+
+<view class='card_list'>
+  <view class='class_list_header'>
+    <view class='class_list_header_icon'>
+      <image mode='widthFix' src='/images/sy/xyk.png'></image>
+    </view>
+    <view wx:if="{{statu.xyk==1}}"  class='class_list_header_text'>
+      <text>校园卡</text>
+    </view>
+    <view wx:if="{{statu.xyk==0}}" class='class_list_header_text'>
+      <text>校园卡加载中</text>
+      <image mode='widthFix' class='loading_gif' src='/images/sy/loading.gif'></image>
+    </view>
+    
+      <navigator url='/pages/core/zd/zd' hover-class="none"  wx:if="{{statu.xyk==1}}" class='class_list_header_sx'>
+   
+        <view>
+          <image  mode='widthFix' src='../../images/sy/zd.png'></image>
+        </view>
+        <view>
+          <text>账单</text>
+        </view>
+      </navigator>
+    
+    
+    
+  </view>
+  <view  wx:if="{{statu.xyk==1}}" class='ye'>
+    <text>余</text>
+    <text class='sz'>{{xyk_ye}}</text>
+    <text class='dw'>元</text>
+  </view>
+
+</view>
+</block>
+<block wx:else>
+  <view class='yh_img'>
+    <image mode='widthFix' class='yh' src='http://ehangopen.ourcauc.com/static/img/yh.png'></image>
+  </view>
+  <view class='bd'>
+    <view>
+      <text>未绑定</text>
+    </view>
+    <view class='bd_an'>
+      <navigator url='/pages/my/login/login'>
+        <button>点此绑定</button>
+      </navigator> 
+    </view>
+  </view>
+  
+</block>
+
+
+

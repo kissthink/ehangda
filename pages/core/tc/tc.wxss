@@ -1,0 +1,70 @@
+/*plcstyle  */
+.place{
+  text-align: left;
+}
+.score{
+  height: 100px;
+  flex: 1;
+  background-color: #3385ff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.score text{
+  color: white;
+  font-size: 3rem;
+}
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: #f8f8f8;  
+} 
+.eui-input{
+  display:flex; flex-direction:row; height:40px;
+  background-color: white;
+  margin:0px 5px;
+}
+.icon{
+  width: 40px;
+}
+.type{
+ width: 150px;
+ padding-left: 10px;
+}
+.icon image{
+  width: 30px;
+  height: 30px;
+}
+.input{
+  flex:1;
+}
+.input input{
+  height: 40px;
+  text-align: right;
+}
+.type,.unit,.input{
+  border-bottom: 1px solid #e6e1e1;
+  line-height: 40px;
+}
+.unit{
+  padding-left: 5px;
+  color: #615c5c;
+  font-size: 0.8rem;
+  line-height: 50px;
+  width: 60px;
+}
+.submit{
+  width: 100%;
+  margin: 10px 0;
+}
+#count{
+  width: 80%;
+  margin: 5 auto;
+  
+}
+/*the icon for more  */
+.score image{
+  width: 23px;
+  height: 23px;
+  position: relative;
+  top: -30px;
+}

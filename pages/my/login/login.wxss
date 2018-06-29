@@ -1,0 +1,133 @@
+
+page{
+  background-image: url('http://ehang.ourcauc.com/static/img/bg_login2.jpg') ;
+  
+/* 背景图不平铺 */
+background-repeat: no-repeat;
+/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+background-attachment: fixed;
+/* 让背景图基于容器大小伸缩 */
+background-size: cover;
+background-color: ghostwhite;
+
+}
+.into-title>text{
+  color: white;
+}
+.place{
+  color: gray;
+  font-size: 0.8rem;
+}
+.detail{
+  font-size: 0.9rem;
+}
+
+.info input{
+  border-bottom: 1px solid #EDEDED;
+  height: 30px;
+  font-size: 0.9rem;
+}
+.info{
+  margin:10px 30px ;
+}
+.headers{
+   margin: 20px 10px;
+  text-align: center;
+}
+.headers image{
+   border-radius: 100px;
+   height: 80px;
+   width: 80px;
+}
+
+button{
+    cursor: pointer;
+    width: 80%;
+    border: none;
+    background: #C75C5C;
+    color: #FFF;
+    padding: 10px;
+    font-size: 15px;
+    margin: 20px auto;
+    height: 50px;
+    vertical-align: middle;
+    line-height: 30px;
+}
+.tip{
+  height: 15px;
+  width: 15px;
+}
+.into-title{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+.into-title image{
+  margin-left: 5px;
+}
+.tips{
+  text-align: center;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+}
+.tips image{
+  width: 30px;
+  height: 30px;
+   
+}
+.tips text{
+  color: gray;
+}
+.detail text{
+  font-size: 0.9rem;
+  line-height: 14px
+}
+.tip-info{
+  position: fixed;
+  top:10%;
+  /* right:0;
+  bottom:0;
+  left:0;
+  margin:auto; */
+  left: 7%;
+  border-radius:5px;
+  border: 1px solid white;
+  padding: 10px;
+  width: 80%;
+  /* height: 70%; */
+  z-index: 100;
+  box-shadow: #D5DCE0 10px 10px 20px;
+  background-color: white;
+}
+.yz{
+  text-align: center;
+}
+.yz button{
+  background-color: gray;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+.header{
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  flex-direction: row;
+}
+#ts{
+  text-align: center;
+  flex: 1;
+}
+#gb{
+  text-align: right;
+  width: 30px;
+}

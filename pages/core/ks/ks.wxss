@@ -1,0 +1,103 @@
+@import "../../common/common.wxss";
+page{
+  width: 100%;
+  height: 100%;
+}
+.header{
+  height: 300px;
+  background-image: url('http://ehang.ourcauc.com/static/img/ks_bg.jpg') ;
+  /* 背景图不平铺 */
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+}
+/*大倒计时  */
+.djs{
+  position: relative;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color:#D6EBE4;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+}
+.title{
+  height: 40px;
+  background-color: #2AA8E2;
+  text-align: center;
+  color: white;
+  line-height: 40px;
+}
+.djs_ts{
+  text-align: center;
+  font-size: 4rem;
+}
+.ks_info_wz,ks_info_dd{
+  display: block; 
+  font-size: 0.9rem;
+}
+.ks_info_single{
+  bottom: 10px;
+}
+/*下面的list  */
+.ks_info{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid ghostwhite;
+  margin: 10px 0;
+}
+.ks_info_icon{
+  width: 60px;
+}
+.ks_info_day{
+  width: 100px;
+}
+.ks_info_detail{
+  flex:1;
+}
+
+.ks_info_icon,.ks_info_day{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ks_info_icon image{
+  width: 40px;
+  height: 40px;
+}
+.ks_info_detail{
+  font-size: 0.9rem;
+}
+.ks_info_js{
+  color: #929594;
+}
+/*没有考试信息  */
+.nothing_img{
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+.nothing_img image{
+  width: 60%;
+
+}
+.nothing_tip{
+  color: gray;
+  text-align: center;
+}
+/*加载  */
+.loading{
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items:Center;
+  text-align: center;
+}
+.loading image{
+  width: 100%;
+}
+.day{
+  font-size: 0.9rem;
+}

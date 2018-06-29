@@ -1,0 +1,38 @@
+/* pages/core/kb/add.wxss */
+page{
+  background-color: #F2F6F9;
+}
+.btn-group{
+  margin-top: 40px;
+}
+.btn{
+  
+  color:white;
+  width: 70%;
+  border-radius: 10px;
+  background-color: #7cba23;
+}
+.one{
+  background-color: white;
+}
+.kcm{
+  margin-top: 10px;
+  border: 0;
+  color: #666666;
+}
+.flx,.kcm{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-bottom: 1px solid gainsboro;
+  padding: 10px;
+  margin-left: 10px;
+  align-items: center;
+}
+.left{
+  width: 30%;
+  color: #666666;
+}
+.kcm{
+  margin-bottom: 20px;
+}

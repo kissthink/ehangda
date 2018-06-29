@@ -1,0 +1,61 @@
+<view style='border-left:7px solid #a2ef54;'  class='news' bindtap='pic'>
+  <view  class='news_main'>
+    <view class='news_title'>
+      <text>更多资讯请关注易航公众号 \n 或 易航网 : www.ehang.cn</text>
+    </view>
+  </view>
+</view>
+<view wx:if="{{load}}"  class="circle-loader">
+        <view class="circle-line">
+            <view class="circle circle-blue"></view>
+            <view class="circle circle-blue"></view>
+            <view class="circle circle-blue"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-yellow"></view>
+            <view class="circle circle-yellow"></view>
+            <view class="circle circle-yellow"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-red"></view>
+            <view class="circle circle-red"></view>
+            <view class="circle circle-red"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-green"></view>
+            <view class="circle circle-green"></view>
+            <view class="circle circle-green"></view>
+        </view>
+    </view>
+<view  wx:for="{{news_list}}"  >
+  <view style='border-left:7px solid {{colorArrays[index]}};'  class='news' data-id='{{index}}' bindtap='showDetail'>
+     <view  class='news_main'>
+    <view class='news_title'>
+      <text>{{item.title}}</text>
+    </view>
+    <view class='news_other'>
+      <view class='news_other_hz'>
+        <text>部门：{{item.bm}}</text>
+      </view>
+      <view class='news_other_time'>
+        <text>时间：{{item.time}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='news_more'>
+    <image mode='widthFix' src='/images/index/yj2.png' ></image>
+  </view>
+  </view>
+ 
+</view>
+<view bindtap='hide' wx:if="{{detail}}" class="modal-box" hidden="{{flag}}" bindtap="hide">
+
+    <view class="modal-body">
+      <view class='modal-title'>
+        <text>通知详情</text>
+      </view>
+      <view class="modal-content">
+        <text>{{tz_detail}}</text>
+     </view>
+    </view>
+  </view>

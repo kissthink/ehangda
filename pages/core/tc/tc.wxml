@@ -1,0 +1,46 @@
+<view class='score'>
+  <text>{{score}}</text>
+  <image bindtap='to' src='../../../images/tc/more.png'></image>
+</view>  
+<form  bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class='eui-input' >
+          <view class='icon'>
+            <image src='../../../images/tc/xb.png'></image>
+          </view>
+          <view class='type'  >性别</view>
+          <view class='input'  >
+            <radio-group name='sex'class="radio-group" bindchange="radioChange">
+              <label  class="radio" wx:for="{{xb_list}}">
+                <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+              </label>
+            </radio-group>
+          </view>
+    </view>
+    <view class='eui-input'  >
+          <view class='icon'>
+            <image src='../../../images/tc/nj.png'></image>
+          </view>
+          <view class='type'  >年级</view>
+          <view class='input'  >
+            <radio-group name='grade' class="radio-group" bindchange="radioChange">
+              <label class="radio" wx:for="{{nj_list}}">
+                <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+              </label>
+            </radio-group>
+          </view>
+    </view>
+    <view class='eui-input' wx:for="{{icon_list}}" >
+          <view class='icon'>
+            <image src='{{item.img}}'></image>
+          </view>
+          <view class='type'  >{{item.type}}</view>
+          <view class='input'  >
+          <input placeholder-class='place' placeholder='{{item.tip}}' name="{{item.name}}" type='digit'></input>
+          </view>
+          <view class='unit'>{{item.unit}}</view>
+    </view>
+    <view class='submit'>
+     <button formType="submit">计算</button>
+    </view>
+  </form>

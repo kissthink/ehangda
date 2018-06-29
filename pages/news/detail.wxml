@@ -1,0 +1,18 @@
+<view class='container'>
+  <view class='header'>
+  <view class='header_title'>
+    <text>{{detail.title}}</text>
+  </view>
+  <view class='header_other'>
+    <view class='header_other_bm'>
+    <text>部门：{{detail.bm}} </text>
+    </view>
+    <view class='header_other_sj'>
+      <text> 时间：{{detail.time}}</text>
+    </view>
+  </view>
+</view>
+ <view class='detail'>
+    <text>{{detail.detail}}</text>
+  </view>
+</view>

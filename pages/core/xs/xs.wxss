@@ -1,0 +1,53 @@
+@import "../ts/ts.wxss";
+page{
+  background-color: #F8F8F8;
+}
+/*输入框  */
+.search input{
+  width: 85%;
+  margin: 0 auto;
+  background-color: white;
+  height: 30px;
+  border-radius:5px;
+  padding: 3px;
+  padding-left: 40px;
+}
+.search{
+  width: 100%;
+  background-color: #FD9E0E;
+  height: 40px;
+}
+.search_icon{
+  position: absolute;
+  z-index: 100;
+  margin-left: 3%;
+  margin-top: 8px;
+}
+/*单个列  */
+.list_single{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #EBDBC2;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.list_icon{
+  width: 60px;
+  text-align: center;
+}
+.list_icon image{
+  width: 30px;
+  height: 30px;
+}
+.list_info{
+  flex: 1;
+}
+.list_info_info{
+  color: gray;
+  font-size: 0.9rem;
+}
+.list_info_info image{
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,26 @@
+page{
+  background-color: gainsboro;
+}
+
+.class_list{
+  width: 95%;
+  height: 150px;
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 30%;
+}
+.class_list_header{
+  border-bottom: 1px dotted gainsboro;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: gray;
+}
+.class_list_header_icon{
+  display: flex;
+  align-items: center;
+}
+.class_list_header_icon image{
+  width: 23px;
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#1FABAA",
+  "navigationBarTitleText": "图书查询",
+  "enablePullDownRefresh": true,
+  "navigationBarTextStyle": "white",
+  "backgroundTextStyle": "dark"
+}

@@ -1,0 +1,77 @@
+<view bindtap='choice'  class='st_type'>
+  <text class='st_type_title'>社团类型：</text>
+  <text class='st_type_name'>{{type_list[num]}}</text>
+  <image class='st_type_more' mode='widthFix' src='/images/stjs/more.png'></image>
+</view>
+<view wx:if="{{is_choice}}" class='st_type_detail'>
+
+  <view wx:for="{{type_list}}" bindtap='choiceType' data-id='{{index}}' class='st_type_ones'><text>{{item}}</text></view>
+
+</view>
+
+<view wx:if="{{!is_choice}}" class='st_list'>
+  <view wx:for="{{st_list[num]}}" data-id="{{index}}" bindtap='showDtail' style='position: relative;left: {{x}}px;top:{{y}}px' class='st_list_one'><text>{{item}}</text></view>
+</view>
+
+<view wx:if="{{is_detail}}" class='st_detail'>
+<view class='st_detail_header'>
+  <text>{{now.st_mc}}</text>
+  <image bindtap='out' class='st_detail_header_img' mode='widthFix' src='/images/stjs/tc.png'></image>
+</view>
+<scroll-view scroll-y class='st_detail_detail' style="height: 92%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" >
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{now.st_tp}}">
+      <swiper-item>
+        <image src="http://ehang.ourcauc.com/st_tp/{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='st_detail_wz'>
+     <view class='st_detail_title'>
+        <view class='st_detal_title_bk'>
+            <view>
+                社团简介
+            </view>
+        </view>
+    </view>
+    <view style='color:black'>
+    {{now.st_js}}
+    </view>
+
+    <view class='st_detail_title'>
+        <view class='st_detal_title_bk'>
+            <view>
+                品牌活动
+            </view>
+        </view>
+    </view>
+    <text >
+    {{now.st_pphd}}
+    </text>
+    <view class='st_detail_title'>
+        <view class='st_detal_title_bk'>
+            <view>
+                所获荣誉
+            </view>
+        </view>
+    </view>
+    <text >
+    {{now.st_shry}}
+</text>
+
+
+ <view class='st_detail_title'>
+        <view class='st_detal_title_bk'>
+            <view>
+                社长有话说
+            </view>
+        </view>
+    </view>
+    <text>
+   {{now.st_szyhs}}
+    </text>
+</view>
+
+</scroll-view>
+</view>

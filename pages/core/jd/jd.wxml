@@ -1,0 +1,54 @@
+ <view wx:if="{{load}}"  class="circle-loader">
+        <view class="circle-line">
+            <view class="circle circle-blue"></view>
+            <view class="circle circle-blue"></view>
+            <view class="circle circle-blue"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-yellow"></view>
+            <view class="circle circle-yellow"></view>
+            <view class="circle circle-yellow"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-red"></view>
+            <view class="circle circle-red"></view>
+            <view class="circle circle-red"></view>
+        </view>
+        <view class="circle-line">
+            <view class="circle circle-green"></view>
+            <view class="circle circle-green"></view>
+            <view class="circle circle-green"></view>
+        </view>
+    </view>
+
+<view wx:else class='header'>
+  <view>
+    <text>{{jd}}</text>
+  </view>
+  <view class='tip'>
+    <image mode='widthFix' src='../../../images/jd/ts.png'></image>点击学分和系数可修改
+  </view>
+</view>
+<form  bindsubmit='js'>
+<view class='jd_list'>
+   <view class='kc_list' wx:for="{{kc_list}}">
+    <view class='kc_list_kcmc'>
+      <text>{{item.kcmc}}</text><text wx:if="{{item.statu==0}}" class='statu_no'>(未收录)</text>
+    </view>
+    <view class='kc_list_fs'>
+      成绩:{{item.cj}}
+    </view>
+    <view class='kc_list_xf'>
+      <text>学分:</text><input type='digit' bindchange="bindInputChange"  data-id="{{index}}"  value="{{xfz[index]}}"></input><text>绩点:{{jd_zz[index]}}</text>
+    </view>
+    <view class='kc_list_xs'>
+      <picker data-id="{{index}}" bindchange="bindPickerChange" value="0" range="{{xs}}">
+        <view class="picker">
+          <text>系数:{{xs[xsz[index]]}}  </text>
+        </view>
+      </picker>
+    </view>
+   
+  </view>
+</view>
+</form>

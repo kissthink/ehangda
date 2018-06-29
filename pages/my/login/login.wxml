@@ -1,0 +1,39 @@
+<view class='headers'>
+  <image src='{{tx_url}}'></image>
+</view>
+<form bindsubmit='saveInfo'>
+<view class='body'>
+  <view class='info' wx:for="{{info_list}}">
+    <view class='into-title'>
+      <text>{{item.name}}</text>
+    </view>
+    <view class='btn'>
+    <input bindtap='closeTip' password='{{item.is_psd}}'  placeholder-class='place' type='{{item.type}}' name="{{item.input}}" placeholder='{{item.msg}}'></input>
+    </view>
+  </view>
+
+</view>
+<view class='tips' bindtap='showTip' >
+    <image src='../../../images/login/jg.png'></image>
+    <text>点击查看绑定申明</text>
+  </view>
+  <view class='tip-info'  wx:if="{{tip=='true'}}">
+      <view class='header'>
+        <view id='ts'>绑定申明</view>
+        <view id='gb' bindtap='closeTip'>×</view>
+      </view>
+      <view class='detail'>
+     <text>
+     1、为保证功能的完整性，需要所有的账号密码通过验证后才能绑定成功。
+2、在不清除小程序或小程序内缓存的情况下，使用周期内只需要绑定一次。
+3、若有不可抗因素(例如忘记密码)导致部分密码始终无法成功验证时，可点击下面的不验证，但这样就无法保证功能完整性。
+4、程序不收集用户账号信息，信息保存在本地，请妥善保管自己的账号和密码。
+5、绑定即同意此协议。
+     </text>
+      <view class='yz'>
+          <button bindtap='quit' class='yz'>取消验证</button>
+      </view>
+      </view>
+  </view>
+  <button form-type='submit' type='submit' >确认绑定</button>
+  </form>
