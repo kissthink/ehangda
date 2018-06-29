@@ -1,7 +1,6 @@
 # E航大微信小程序
 E航大是一款校园服务查询类微信小程序，是碎片化、一站式、一体化校园移动门户，是适用于学生和教师的集课表、成绩查询、上网管理、空教室查询、体测、考试查询、素拓查询、洗衣机使用情况查询、图书馆借阅、拾卡信息、通知等等各功能于一身的服务查询类小程序。
 # 一些界面截图
-![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/0.jpg)
 ![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/1.jpg)
 ![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/2.jpg)
 ![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/3.jpg)
@@ -23,3 +22,5 @@ E航大是一款校园服务查询类微信小程序，是碎片化、一站式�
 ![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/19.jpg)
 ![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/20.jpg)
 ![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/21.jpg)
+![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/22.jpg)
+![截图](https://github.com/cnlh/ehangda/raw/master/screenshot/23.jpg)
